@@ -66,3 +66,45 @@ Second Commit - Adding Native Wind
 
     ctrl + C server and start again
     then press r to reload 
+
+
+Third Commit - Adding Font and assets
+    Paster fonts into assets/fonts folder
+    Add constants in consts folder || Optional
+        Constants is used to add static data for testing
+
+   Update the icon references in app.json
+
+   add all fonts in app.json plugins like this 
+
+        [
+            "expo-font",
+            {
+            "fonts": [
+                "./assets/fonts/Rubik-Bold.ttf",
+                "./assets/fonts/Rubik-Regular.ttf",
+                "./assets/fonts/Rubik-Medium.ttf",
+                "./assets/fonts/Rubik-SemiBold.ttf",
+                "./assets/fonts/Rubik-ExtraBold.ttf",
+                "./assets/fonts/Rubik-Light.ttf"
+            ]
+            }
+        ]
+
+    Update the expo-splash-screen settings (Screen that displays when app is loading)
+        [
+            "expo-splash-screen",
+            {
+            "image": "./assets/images/splash-icon.png",
+            "imageWidth": 200,
+            "resizeMode": "contain",
+            "backgroundColor": "#ffffff"
+            }
+        ],
+
+
+    Update the _layout.tsx file to include the fonts
+    Update the tailwind.config.js and add all the fonts and colors
+    create image.d.ts in root folder of application to resolve the icons.ts issue in constants
+
+    
