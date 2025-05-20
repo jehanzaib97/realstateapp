@@ -107,4 +107,7 @@ Third Commit - Adding Font and assets
     Update the tailwind.config.js and add all the fonts and colors
     create image.d.ts in root folder of application to resolve the icons.ts issue in constants
 
-    
+Fouth Commit - Creating UI
+    Add the headerShown to false in layout to remove the header from the app so that real UI can be implimented
+    Change view to <SafeAreaView> to remove to fit the text in screen
+    create the rest of the components
