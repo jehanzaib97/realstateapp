@@ -111,3 +111,23 @@ Fouth Commit - Creating UI
     Add the headerShown to false in layout to remove the header from the app so that real UI can be implimented
     Change view to <SafeAreaView> to remove to fit the text in screen
     create the rest of the components
+
+
+Fifth Commit - Setting up appwrite for Google Auth\
+    Create an account on appwrite and create a new project\
+    Go to Auth -> Setting -> Google auth\
+    Complete the rest of the process\
+    Add a new platform in appwrite for web app. Set the second option to * \
+    create a new .env.local file in root folder\
+    Add appwrite project id and endpoint\
+
+
+    Create a lib folder and create appwrrite.ts file\
+    set the connection, login, logout etc functions in appwrite.ts file\
+    impliment the newly created login function inside handleLogin function in signin.tsx
+    create useAppwrite.ts file in lib folder and add the repeated code into functions
+    create global-provider.tsx in lib to check auth and fetch current user 
+    Update the _layout.tsx to include the global provider
+    if you get the error in loggin using Google. Check the error details and add the redirect URL to google OAuth console
+    update the sign-in.tsx file to redirect logged in users to the home page
+    create a new parent layout in root folder to redirect the logged in and not logged in users accordingly
