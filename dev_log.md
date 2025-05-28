@@ -131,3 +131,8 @@ Fifth Commit - Setting up appwrite for Google Auth\
     if you get the error in loggin using Google. Check the error details and add the redirect URL to google OAuth console
     update the sign-in.tsx file to redirect logged in users to the home page
     create a new parent layout in root folder to redirect the logged in and not logged in users accordingly
+
+
+Sixth Commit - Creating the rest of pages
+    Create a new layout file in tabs folder - Create tab icon and tabs screen for each page in the folder
+    update the profile.tsx to include the profile page and user data. Add logout func
