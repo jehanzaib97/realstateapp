@@ -23,6 +23,10 @@ export const avatar = new Avatars(client);
 
 export async function login() {
   try {
+
+    //Delete any previous sessions if exist
+    await account.deleteSession("current").catch(() => {});
+
     const redirectUri = Linking.createURL("/");
     console.log("Redirect URI:", redirectUri);
 
