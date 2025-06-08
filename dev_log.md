@@ -162,4 +162,7 @@ Eighth Commit - Adding real user data and creating database
     Update the index.tsx file. Create the functions to get properties 
     Create a new component "NoResults" to display in case there are no properties
     Update the flatlist and add options to display NoResult component
-    
+    To search through properties go to appwrite database portal and properties table
+
+Ninth Commit - Creating explore page and finishing the app
+    Fixing the Filter issue when pressed all

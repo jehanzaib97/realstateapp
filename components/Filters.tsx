@@ -15,6 +15,9 @@ const Filters = () => {
             setSelectedCategory(category);
             router.setParams({ filter: category });
         }
+
+        console.log('Selected category:', category);
+        
     }
 
     return (

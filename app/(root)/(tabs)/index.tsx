@@ -22,7 +22,7 @@ export default function Index() {
   const { data: properties, loading, refetch } = useAppwrite({
     fn: getProperties,
     params: {
-      filter: params.filter!,
+      filter: params.filter === 'All' ? undefined : params.filter!,
       query: params.query!,
       limit : 6
     },
@@ -37,7 +37,7 @@ export default function Index() {
   //Call refetch whenever params or query value changes
   useEffect(() => {
     refetch({
-      filter: params.filter!,
+      filter: params.filter === 'All' ? undefined : params.filter!,
       query: params.query!,
       limit : 6
     });
